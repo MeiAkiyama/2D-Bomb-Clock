@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 476135284168746215}
   - component: {fileID: 4286027515397713685}
   - component: {fileID: 5031401212237816379}
+  - component: {fileID: 302544183962511113}
   m_Layer: 9
   m_Name: YellowLine
   m_TagString: Untagged
@@ -111,3 +112,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8621395, y: 3.5200002}
   m_EdgeRadius: 0
+--- !u!114 &302544183962511113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178372186056268592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7dad15e201f8c4bbe8cbe72d3441a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 3
