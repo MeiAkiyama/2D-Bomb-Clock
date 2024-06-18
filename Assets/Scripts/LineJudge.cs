@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LineJudge : MonoBehaviour
 {
     public lineManager lineMg;
-    lineManager.lineColors correctColor;
+    private lineManager.lineColors correctColor;
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +19,10 @@ public class LineJudge : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public lineManager.lineColors getCurrectColor()
+    {
+        return correctColor;
     }
 }
