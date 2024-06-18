@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 247769398}
   - component: {fileID: 247769397}
+  - component: {fileID: 247769400}
   - component: {fileID: 247769399}
   m_Layer: 0
   m_Name: TImeManager
@@ -311,6 +312,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &247769400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247769396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69949a51cefa6e94186b72235246eae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &254141317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476135284168746215, guid: 9eb10e52f244a1e4899049ed6606a405, type: 3}
@@ -2307,7 +2320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1739538034}
   - component: {fileID: 1739538033}
-  - component: {fileID: 1739538035}
   m_Layer: 0
   m_Name: lines
   m_TagString: Untagged
@@ -2352,6 +2364,7 @@ MonoBehaviour:
   - {fileID: 566803774}
   - {fileID: 1624008016}
   - {fileID: 347843035}
+  set: {fileID: 247769400}
 --- !u!4 &1739538034
 Transform:
   m_ObjectHideFlags: 0
@@ -2391,18 +2404,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1739538035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739538032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69949a51cefa6e94186b72235246eae7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1843723926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476135284168746215, guid: d687049e904949a468d6a77db21bda09, type: 3}
