@@ -45,6 +45,12 @@ public class TimeSet : MonoBehaviour
 
     public void startClick()
     {
+        this.GetComponent<AudioSource>().Play();
+        Invoke("sceneChange", 1);
+    }
+
+    public void sceneChange()
+    {
         SceneManager.LoadScene("BombClockScene");
     }
 }
