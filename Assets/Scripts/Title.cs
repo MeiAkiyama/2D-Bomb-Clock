@@ -13,6 +13,6 @@ public class Title : MonoBehaviour
 
     private void ChangeStartToGameScene()
     {
-        SceneManager.LoadScene("BombClockScene");
+        SceneManager.LoadScene("introductionScene");
     }
 }
