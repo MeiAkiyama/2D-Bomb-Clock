@@ -5,9 +5,12 @@ using UnityEngine.EventSystems;
 
 public class clickExample : MonoBehaviour
 {
+    lineManager.lineColors color;
     public void OnClicked()
     {
-        var color = this.gameObject.GetComponent<lineColor>().getColor();
+        color = this.gameObject.GetComponent<lineColor>().getColor();
         Debug.Log(color);
     }
+
+
 }

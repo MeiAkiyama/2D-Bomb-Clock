@@ -16,13 +16,15 @@ public class lineManager : MonoBehaviour
     private int nowTime;
     //public int testTime;
 
+    private lineColors linecolor;
+
     private void Start()
     {
         //enum—v‘f”æ“¾
         enumLength = Enum.GetValues(typeof(lineColors)).Length;
         //ƒ‰ƒ“ƒ_ƒ€‚ÅFî•ñ‚ğæ“¾
         colorNumber = UnityEngine.Random.Range(0, enumLength);
-        lineColors linecolor = (lineColors)colorNumber;
+        linecolor = (lineColors)colorNumber;
         Debug.Log(linecolor);
 
         //ŠÔæ“¾
@@ -74,5 +76,10 @@ public class lineManager : MonoBehaviour
     public int getEnumLength()
     {
         return enumLength;
+    }
+
+    public lineColors getColor()
+    {
+        return linecolor;
     }
 }
