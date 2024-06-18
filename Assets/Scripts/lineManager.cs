@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class lineManager : MonoBehaviour
     public enum lineColors{
         Red,Blue,Green,Yellow
     };
+    private int enumLength;
+    private int colorNumber;
 
     //線の配列
     public GameObject[] lines;
@@ -15,6 +18,14 @@ public class lineManager : MonoBehaviour
 
     private void Start()
     {
+        //enum要素数取得
+        enumLength = Enum.GetValues(typeof(lineColors)).Length;
+        //ランダムで色情報を取得
+        colorNumber = UnityEngine.Random.Range(0, enumLength);
+        lineColors linecolor = (lineColors)colorNumber;
+        Debug.Log(linecolor);
+
+        //時間取得
         nowTime = TimeSet.getHour();
         //nowTime = testTime;
 
@@ -33,6 +44,8 @@ public class lineManager : MonoBehaviour
         }
         Debug.Log(nowTime);
     }
+
+
 
     private void setZero()
     {
@@ -56,5 +69,10 @@ public class lineManager : MonoBehaviour
         {
             lines[i].SetActive(true);
         }
+    }
+
+    public int getEnumLength()
+    {
+        return enumLength;
     }
 }
