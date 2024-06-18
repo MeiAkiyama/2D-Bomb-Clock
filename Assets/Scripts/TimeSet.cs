@@ -19,11 +19,25 @@ public class TimeSet : MonoBehaviour
         //時間取得
         DateTime now = DateTime.Now;
         hourNumber = now.Hour;
+        int lineNumber;
+
+        if(hourNumber == 0)
+        {
+            lineNumber = 24;
+        }
+        else if(0<hourNumber && hourNumber <= 4)
+        {
+            lineNumber = 4;
+        }
+        else
+        {
+            lineNumber = hourNumber;
+        }
 
         //テキストコンポーネント取得
         tex1 = text1.GetComponent<TextMeshProUGUI>();
 
-        tex1.text = "線は" + hourNumber + "本出てきます。";
+        tex1.text = "線は" + lineNumber + "本出てきます。";
     }
 
     // Update is called once per frame
