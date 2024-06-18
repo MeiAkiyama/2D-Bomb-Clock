@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameTimeManager : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class GameTimeManager : MonoBehaviour
 
         if (time < 0)
         {
-            Debug.Log("‚¨‚í‚è");
+            SceneManager.LoadScene("GameOverScene");
         }
 
         if (intervalTime >= nextSoundTime)

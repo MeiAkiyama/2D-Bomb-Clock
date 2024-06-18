@@ -16,11 +16,11 @@ public class ClickAndJudge : MonoBehaviour
         Debug.Log(color);
         if(lj.getColor() == color)
         {
-            Debug.Log("çáÇ¡ÇƒÇÈ");
+            SceneManager.LoadScene("ClearScene");
         }
         else
         {
-            Debug.Log("ä‘à·Ç¡ÇƒÇÈ");
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
