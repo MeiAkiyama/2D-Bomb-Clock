@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class TimeSet : MonoBehaviour
 {
     private static int hourNumber;
-    private int minuteNumber;
 
     [SerializeField] GameObject text1;
 
@@ -20,7 +19,6 @@ public class TimeSet : MonoBehaviour
         //時間取得
         DateTime now = DateTime.Now;
         hourNumber = now.Hour;
-        minuteNumber = now.Minute;
 
         //テキストコンポーネント取得
         tex1 = text1.GetComponent<TextMeshProUGUI>();
