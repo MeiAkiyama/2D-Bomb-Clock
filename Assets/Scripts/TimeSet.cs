@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimeSet : MonoBehaviour
 {
@@ -40,5 +41,10 @@ public class TimeSet : MonoBehaviour
     public static int getHour()
     {
         return hourNumber;
+    }
+
+    public void startClick()
+    {
+        SceneManager.LoadScene("BombClockScene");
     }
 }
